@@ -23,6 +23,6 @@ func (c *Controller) Index(ctx context.Context) (stories []*hackernews.Story, er
 
 // Show story
 // GET /:id
-func (c *Controller) Show(ctx context.Context, id int) (story *Story, err error) {
-	return &Story{}, nil
+func (c *Controller) Show(ctx context.Context, id int) (story *hackernews.Story, err error) {
+	return c.HN.Find(ctx, id)
 }
