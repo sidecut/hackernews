@@ -1,5 +1,5 @@
 <script>
-  export let stories = []
+  export let stories = [];
 </script>
 
 <h1>Story Index</h1>
@@ -26,6 +26,9 @@
 </table>
 
 <style>
+  h1 {
+    margin-left: 1rem;
+  }
   table {
     border-collapse: collapse;
   }
